@@ -10,12 +10,12 @@ pipeline{
                 script{
                     if (params.CASE == ''){
                         sh "chmod +x ./${params.PARCOURS}.sh"
-                        sh "./${params.PARCOURS}.sh"
+                        "./${params.PARCOURS}.sh"
                     }
             
                     else{
                         sh "chmod +x ./${params.CASE}.sh"
-                        sh "./${params.CASE}.sh"
+                        "./${params.CASE}.sh"
                     }
                 }
             }
