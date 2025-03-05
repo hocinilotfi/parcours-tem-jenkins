@@ -9,11 +9,11 @@ pipeline{
             steps{
                 script{
                     if (params.CASE == ''){
-                        sh "./${params.PARCOURS}.sh"
+                        sh "sh ./${params.PARCOURS}.sh"
                     }
             
                     else{
-                        sh "./${params.CASE}.sh"
+                        sh "sh ./${params.CASE}.sh"
                     }
                 }
             }
